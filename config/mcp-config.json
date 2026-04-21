@@ -1,0 +1,34 @@
+{
+  "server": {
+    "name": "mcp-project-server",
+    "version": "1.0.0",
+    "description": "A comprehensive MCP server implementation"
+  },
+  "capabilities": {
+    "tools": {
+      "enabled": true,
+      "list": [
+        "echo",
+        "get_current_time",
+        "calculate"
+      ]
+    },
+    "resources": {
+      "enabled": true,
+      "list": [
+        "mcp://project/info",
+        "mcp://project/status",
+        "mcp://server/config"
+      ]
+    }
+  },
+  "security": {
+    "allowEval": false,
+    "maxExpressionLength": 100,
+    "sanitizeInputs": true
+  },
+  "logging": {
+    "level": "info",
+    "format": "json"
+  }
+}
